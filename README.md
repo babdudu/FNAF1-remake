@@ -2,10 +2,6 @@
 
 A JavaScript recreation of Five Nights at Freddy's 1 (WITHOUT ANIMATRONIC ALGO, FOR NOW), built using only plain JS/DOM and HTML.
 
-## About This Project
-
-This is a browser-based implementation of FNAF 1, where you play as a night security guard trying to survive from 12 AM to 6 AM while being hunted by animatronics. The game features camera monitoring, door controls, and a power management system.
-
 ## Objectives
 
 This project follows the objectives:
