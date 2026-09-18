@@ -1,6 +1,6 @@
 # Five Nights at Freddy's 1 
 
-A JavaScript recreation of Five Nights at Freddy's 1, built using only plain JS/DOM and HTML.
+A JavaScript recreation of Five Nights at Freddy's 1 (WITHOUT ANIMATRONIC ALGO, FOR NOW), built using only plain JS/DOM and HTML.
 
 ## About This Project
 
