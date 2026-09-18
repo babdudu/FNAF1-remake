@@ -1,0 +1,140 @@
+.cameraUI {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('../static/miscellaneous/cameraOutline4.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+.cameraButton {
+    position: absolute;
+    width: 55px;
+    height: 35px;
+    font-family: "FNAF";
+    background-size: contain;
+    background-position: center;
+    border: 0px;
+    z-index: 3;
+    pointer-events: auto;
+}
+
+.cameraMap {
+    background-image: url('../static/miscellaneous/cameraMap.png');
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    width: 380px;
+    height: 380px;
+    left: 67%;
+    top: 40%;
+}
+
+[id="1A"] {
+    margin-top: 6%;
+    margin-left: 25%;
+}
+
+[id="1B"] {
+    margin-top: 19.2%;
+    margin-left: 22%;
+}
+
+[id="1C"] {
+    margin-top: 39%;
+    margin-left: 14%;
+}
+
+[id="2A"] {
+    margin-top: 68%;
+    margin-left: 26.5%;
+}
+
+[id="2B"] {
+    margin-top: 78%;
+    margin-left: 26.5%;
+}
+
+[id="3"] {
+    margin-top: 63%;
+    margin-left: 6%;
+}
+
+[id="4A"] {
+    margin-top: 68%;
+    margin-left: 53%;
+}
+
+[id="4B"] {
+    margin-top: 78%;
+    margin-left: 53%;
+}
+
+[id="5"] {
+    margin-top: 26%;
+    margin-left:-5% ;
+}
+
+[id="6"] {
+    margin-top: 59%;
+    margin-left: 78%;
+}
+
+[id="7"] {
+    margin-top: 26.5%;
+    margin-left: 80%;
+}
+
+.staticFlash {
+    position: absolute;
+    background-size: cover;
+    opacity: 20%;
+    top: -2%;
+    left: -0.2%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.static {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    opacity: 20%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: block;
+    pointer-events: none;
+}
+
+.roomText {
+    font-family: 'FNAF';
+    font-size: 30px;
+    color: white;
+    right: 19%;
+    top: 33%;
+    position: fixed;
+    z-index: 3;
+}
+
+.cameraRoom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none;
+    background-repeat: no-repeat;
+}

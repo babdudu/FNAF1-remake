@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Five Nights at Freddy's 1</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/office.css">
+    <link rel="stylesheet" href="../css/camera.css">
+    <audio id="bgMusic" loop>
+        <source src="../sounds/main/officeAudio.wav" type="audio/wav">
+    </audio>
+</head>
+<body id="officeView">
+
+        <button id="pauseButton" onclick="pauseManager.pause()"></button>
+        <div id="currentTime"> 12 AM  </div>
+        <div id="currentNight"> Night 1 </div>
+
+
+    <div id="pauseOverlay">
+            <button class="pauseMenuButton" onclick="pauseManager.unpause()">Continue</button>
+            <button class="pauseMenuButton" onclick="pauseManager.restart()">Restart</button>
+            <button class="pauseMenuButton" onclick="window.location.replace('../index.html')">Main Menu</button>
+    </div>
+
+    <div id="officeContainer">
+        <div id="imageWrapper">
+            <button id="leftDoorTopButton" onclick="buttons.topLeftClick()"> </button>
+            <button id="leftDoorBottomButton" onclick="buttons.bottomLeftClick()"> </button>
+            <img src="../static/theOffice/leftButton.png" id="leftDoorButtons">
+
+            <img src="../static/rooms/theOffice_complete.png" id="officeImage">
+
+            <img src="../static/theOffice/rightButton.png" id="rightDoorButtons">
+            <button id="rightDoorTopButton" onclick="buttons.topRightClick()"> </button>
+            <button id="rightDoorBottomButton" onclick="buttons.bottomRightClick()"></button>
+
+            <img src="../static/theOffice/rightDoor.png" id="rightDoor">
+            <img src="../static/theOffice/leftDoor.png" id="leftDoor">
+        </div>
+    </div>
+        
+    <div id="bottomItems"> 
+        <div id="powerStats">
+            <div>
+                Power left: <span id="percent">100%</span>
+            </div>
+
+            <div id="usage">
+                Usage:
+                <img src="../static/miscellaneous/fullBar.png" id="usageBar">
+            </div>
+
+        </div>
+
+        <img src="../static/miscellaneous/cameraBar.png" id="cameraBar" onmouseenter="cameraSystem.onCameraBarHover()">
+
+    </div>
+
+        
+        <script src="../js/camera/cameraButtons.js"></script>
+        <script src="../js/camera/cameraUI.js"></script>
+        <script src="../js/camera/cameraAudio.js"></script>
+        <script src="../js/camera/cameraRooms.js"></script>
+        <script src="../js/shared/timeSystem.js"></script>
+        <script src="../js/office/doorAnimator.js"></script>
+        <script src="../js/office/officeAnimator.js"></script>
+        <script src="../js/office/inputHandler.js"></script>
+        <script src="../js/office/pause.js"></script>
+        <script src="../js/office/officeView.js"></script>
+        <script src="../js/office/bgMusic.js"></script>
+        <script src="../js/office/officeButtons.js"></script>
+        <script src="../js/camera/cameraSystem.js"></script>
+        <script src="../js/shared/powerSystem.js"></script>
+        <script src="../js/jumpscares/jumpscare.js"></script>
+        <script src="../js/jumpscares/gameOver.js"></script>
+
+        <script>
+            const officeView = new OfficeView();
+            const pauseManager = new PauseManager(officeView);
+            const cameraSystem = new CameraSystem();
+            const powerSystem = new PowerSystem();
+            const buttons = new ButtonFunctions(officeView);
+            const audio = new BackgroundMusic();
+            const time = new TimeSystem(officeView);
+
+            powerSystem.startDrain();
+        </script>
+</body>
+</html>

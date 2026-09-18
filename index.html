@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Five Nights at Freddy's 1</title>
+    <link rel="stylesheet" href="css/main.css">
+    <audio id="bgMusic" loop>
+        <source src="sounds/main/mainMenu.wav" type="audio/wav">
+    </audio>
+    <audio id="buttonAction">
+        <source src="sounds/userInteraction/cameraBlip.wav" type="audio/wav">
+    </audio>
+</head>
+<body id="mainMenuBg">
+
+    <div class="title">
+        Five Nights at Freddy's
+    </div>
+
+    <div class="menuContent" id="menuContent">
+        <button class="menuButton" onclick="newGame()">
+            <img class="arrow" src="static/miscellaneous/hover.png">
+            New Game
+        </button>
+
+        <button class="menuButton1" onclick="cont()">
+            <img class="arrow" src="static/miscellaneous/hover.png">
+            Select Night
+        </button>
+    </div>
+
+     <img id="staticOverlay" src="static/miscellaneous/static.gif">
+    <img id="staticOverlay" src="static/miscellaneous/blipFlash.gif" >
+
+
+    <script src="js/mainMenu/mainMenu.js"></script>
+    <script src="js/mainMenu/menuAudio.js"></script>
+    <script src="js/mainMenu/mainNavigation.js"></script>
+
+    <script>
+        const animation = new MainMenuAnimation();
+        animation.animate();
+
+        const audio = new MenuAudio();
+    </script>
+</body>
+</html>

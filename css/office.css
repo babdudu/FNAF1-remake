@@ -1,0 +1,341 @@
+#officeView {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#officeContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.camera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#imageWrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#officeImage {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#cameraBar {
+    position: fixed;
+    opacity: 0.5;
+    height: 60px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-left: 17%;
+    z-index: 5;
+}
+
+#bottomItems{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    width: 90%;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    gap: 4%;
+    user-select: none;
+    z-index: 2;
+}
+
+#powerStats{
+   font-family: "FNAF";
+   color: white;
+   font-size: 20px;
+   user-select: none;
+   margin-bottom: 10px;
+   z-index: 2;
+}
+
+#usage {
+    margin-bottom: 10px; 
+}
+
+#usageBar {
+    object-fit: none;
+    object-position: 0 0;
+    height: 32px;
+    width: 21px;
+}
+
+#leftDoorButtons {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: -100px;
+    width: 94px;
+    height: 247px;
+    object-fit: none;
+    object-position: 0 0;
+    user-select: none;
+
+}
+
+#leftDoorTopButton {
+    position: absolute;
+    z-index: 2;
+    width: 37px;
+    height: 55px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+}
+
+#leftDoorBottomButton {
+    position: absolute;
+    z-index: 2;
+    width: 37px;
+    height: 55px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+}
+
+#rightDoorTopButton {
+    position: absolute;
+    z-index: 2;
+    width: 37px;
+    height: 55px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+}
+
+#rightDoorBottomButton {
+    position: absolute;
+    z-index: 2;
+    width: 37px;
+    height: 55px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+}
+
+#rightDoorButtons {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 100vw;
+    width: 94px;
+    height: 247px;
+    object-fit: none;
+    object-position: 0 0;
+    user-select: none;
+}
+
+#pauseButton {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    background-image: url('../static/miscellaneous/pause.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+}
+
+
+#pauseOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.pauseMenuButton {
+    font-family: "FNAF";
+    font-size: 32px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    z-index: 2;
+}
+
+#currentTime {
+    font-family: "FNAF";
+    font-size: 30px;
+    position: absolute;
+    color: white;
+    right: 40px;  
+    top: 35px;    
+    letter-spacing: -1px;
+    display: block;
+    z-index: 2;
+}
+
+#currentNight {
+    font-family: "FNAF";
+    font-size: 19px;
+    position: absolute;
+    color: white;
+    right: 40px;  
+    top: 75px;    
+    display: block;
+    z-index: 2;
+}
+
+#percent {
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+    z-index: 2;
+}
+
+#rightDoor {
+    position: absolute;
+    pointer-events: none;
+    object-fit: none;
+    object-position: 0 0;
+    width: 250px;
+    height: 721px;
+    margin-top: 5px;
+}
+
+#leftDoor {
+    position: absolute;
+    pointer-events: none;
+    object-fit: none;
+    object-position: -1500px 0;
+    width: 250px;
+    height: 721px;
+    margin-top: 5px;
+}
+
+.transitionText {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    overflow: hidden;
+    background: black;
+}
+
+.five, .six {
+    font-family: "FNAF";
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    right: 660px;
+    letter-spacing: -1px;
+}
+
+.five {
+    animation: slideUp 5s ease-in forwards;
+}
+
+.six {
+    animation: slideUpSix 5s ease-in forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+}
+
+@keyframes slideUpSix {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.am {
+    font-family: "FNAF";
+    font-size: 100px;
+    color: white;
+    letter-spacing: -1px;
+    position: absolute;
+    right: 490px;
+}
+
+.transitionText::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: black;
+    top: 28%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.transitionText::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: black;
+    bottom: 23%;
+    z-index: 1;
+}
+
+.jumpscare {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
